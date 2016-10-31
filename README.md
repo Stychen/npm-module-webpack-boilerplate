@@ -24,6 +24,7 @@ A boilerplate for making npm modules, bundled with webpack and written in ES6.
 ```
 git clone git@github.com:Stychen/npm-module-webpack-boilerplate.git <your-new-repo-name>
 cd <your-repo-name>
+npm install
 ```
 
 ### Update package.json
