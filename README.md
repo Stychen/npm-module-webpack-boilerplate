@@ -6,10 +6,10 @@ A boilerplate for making npm modules, bundled with webpack and written in ES6.
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Clone the repo](#clone-the-repo)
-  - [Customize package.json](#customize-packagejson)
-  - [Customize the README.md file](#customize-the-readmemd-file)
+  - [Update package.json](#update-packagejson)
   - [Build your module](#build-your-module)
   - [Test your module](#test-your-module)
+  - [Upload your npm module](#upload-your-npm-module)
 
 ## Features
 
@@ -69,3 +69,8 @@ Your module's entry path is at `src\index.js` and the output path is at `lib\<mo
     npm run tdd
     ```
     This will run karma in tdd mode
+    
+### Upload your npm module
+
+After your done with development of your npm module. You can upload your module in npmjs.com
+https://docs.npmjs.com/getting-started/publishing-npm-packages
