@@ -37,6 +37,8 @@ Also in `webpack.config.js`, change `module_name_here`.
 
 ### Build your module
 
+Your module's entry path is at `src\index.js` and the output path is at `lib\<module_name>.min.js`. This can be edited at `webpack.config.js`.
+
 1. For production
 
   ```sh
