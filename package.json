@@ -1,0 +1,56 @@
+{
+  "name": "npm-module-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for making npm modules, bundled with webpack and written in ES6.",
+  "main": "lib/module_name_here.min.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack",
+    "test": "karma start",
+    "tdd": "karma start --auto-watch --no-single-run",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stychen/npm-module-webpack-boilerplate.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "webpack",
+    "es6",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/Stychen/React-Newline-to-Break/blob/master/README.md",
+  "author": "Stychen Tan <stychentan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stychen/npm-module-webpack-boilerplate/issues"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "clean-webpack-plugin": "^0.1.13",
+    "eslint": "^3.9.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-react": "^6.4.1",
+    "isparta-loader": "^2.0.0",
+    "karma": "^1.3.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-tap": "^3.1.1",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.1.2",
+    "webpack": "^1.13.3",
+    "webpack-merge": "^0.15.0"
+  }
+}
