@@ -1,62 +1,69 @@
-# React-Newline-to-Break
-Converts your strings with newlines ("\n") to error/warning free React components.
+# npm-module-webpack-boilerplate
+A boilerplate for making npm modules, bundled with webpack and written in ES6.
 
+## Contents
 
-### Installation
-```bash
-npm i react-newline-to-break --save
-```
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Clone the repo](#clone-the-repo)
+  - [Customize package.json](#customize-packagejson)
+  - [Customize the README.md file](#customize-the-readmemd-file)
+  - [Build your module](#build-your-module)
+  - [Test your module](#test-your-module)
 
-### Usage
+## Features
 
-First, require it from your app's JavaScript files with:
-```bash
-import nl2br from 'react-newline-to-break';
-```
+* ES6 with Babel
+* Bundle with Webpack
+* Run tests and tdd with karma in ES6
 
-### Example
+## Getting Started
 
-```js
-import React from 'react';
-import nl2br from 'react-newline-to-break'; 
-
-
-class App extends React.Component {
-
-  render() {
-    let myString = "Hello I am cool\nbut you are too\n\nCan we be friends?"
-    return (
-      <div>
-        {nl2br(myString)}
-      </div>
-    );
-  }
-}
-```
-
-this will render into something like
-```js
-<div>
-    <span key={0}>
-        Hello I am cool
-        <br/>
-    </span>
-    <span key={1}>
-        but you are too
-        <br/>
-    </span>
-    <span key={2}>
-        <br/>
-    </span>
-    <span key={3}>
-        Can we be friends?
-        <br/>
-    </span>
-</div>
+### Clone the repo
 
 ```
+git clone git@github.com:Stychen/npm-module-webpack-boilerplate.git <your-new-repo-name>
+cd <your-repo-name>
+```
 
-Hello I am cool
-but you are too
+### Update package.json
 
-Can we be friends?
+Open up `package.json` and update to your liking.
+Important: 
+Change `module_name_here` in `package.json` to your module_name.
+Also in `webpack.config.js`, change `module_name_here`.
+
+
+
+### Build your module
+
+1. For production
+
+  ```sh
+  npm run build
+  ```
+
+  This will run webpack to bundle minified versions of your library in `./lib` with sourcemaps.
+
+
+2. For development
+
+  ```sh
+  npm start
+  ```
+
+  This will run the `webpack` build in watch mode.
+  
+### Test your module
+
+1. For testing
+    ```sh
+    npm run test
+    ```
+    This will run tests in `./test` that are named `**_test.js` (ie: `sample_test.js`). 
+   
+2. For test driven development
+    ```sh
+    npm run tdd
+    ```
+    This will run karma in tdd mode

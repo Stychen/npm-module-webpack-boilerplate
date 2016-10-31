@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const Clean = require('clean-webpack-plugin');
 const path = require('path');
 
-const libraryName = 'library_name_here';
+const libraryName = 'module_name_here';
 
 const ROOT_PATH = path.resolve(__dirname);
 const SRC_PATH = path.resolve(ROOT_PATH, 'src');

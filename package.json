@@ -4,7 +4,7 @@
   "description": "A boilerplate for making npm modules, bundled with webpack and written in ES6.",
   "main": "lib/module_name_here.min.js",
   "scripts": {
-    "dev": "webpack --watch",
+    "start": "webpack --watch",
     "build": "webpack",
     "test": "karma start",
     "tdd": "karma start --auto-watch --no-single-run",
